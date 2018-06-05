@@ -33,10 +33,11 @@ $(function(){
 				var temp="<table>";
 				for(var i in data)
 				{
-					var user=data[i]
-					temp+="<tr><td>"+user.name+"</td>"
-					temp+="<td>"+user.id+"</td>";
-					temp+="<td>"+user.address+"</td></tr>";
+				  alert(data);
+					var user=data[i];
+					temp+="<tr><td>"+user.name+"</td>";
+					temp+="<td>"+user.phone+"</td>";
+					temp+="<td>"+user.profile+"</td></tr>";
 				}
 				temp+="</table>";
 				$('#container').html(temp);
